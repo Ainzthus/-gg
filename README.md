@@ -33,6 +33,16 @@
     <li><a href="https://youtube.com/c/mi_usuario"><i class="fab fa-youtube"></i> YouTube</a></li>
   </ul>
 
+  <!-- Reproductor embebido de Twitch -->
+  <iframe
+    src="https://player.twitch.tv/?channel=Ainzthus"
+    height="720"
+    width="1280"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen="true">
+  </iframe>
+
   <h2>Acerca de</h2>
   <p>Esta página web fue creada para compartir mis pasiones, proyectos y experiencias con el mundo. Espero que encuentres algo interesante y útil mientras exploras el contenido.</p>
 
