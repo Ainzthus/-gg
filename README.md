@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://kit.fontawesome.com/bbd0f66390.js" crossorigin="anonymous">
 
 <!-- Contenido de la página web -->
-# Mi Página Web Increíble
+# Proyectos y informacion de Ainzthus
 
 ¡Bienvenido a mi increíble página web! Aquí podrás encontrar información interesante sobre mis proyectos, mis intereses y más. ¡Explora y diviértete!
 
