@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyectos e información de Ainzthus</title>
   
   <!-- Enlace a FontAwesome para los íconos -->
   <link rel="stylesheet" href="https://kit.fontawesome.com/bbd0f66390.js" crossorigin="anonymous">
