@@ -35,7 +35,7 @@
 
   <!-- Reproductor embebido de Twitch -->
   <iframe
-    src="https://player.twitch.tv/?channel=Ainzthus"
+    src="https://www.twitch.tv/ainzthus"
     height="720"
     width="1280"
     frameborder="0"
