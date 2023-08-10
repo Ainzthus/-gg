@@ -1,5 +1,5 @@
 <!-- Agrega el enlace a FontAwesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-A3qzjcqJ8spGMY56PV4ENqcOrpE5aoGpSoFsrx9twVLE8+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+<link rel="stylesheet" href="https://kit.fontawesome.com/bbd0f66390.js" crossorigin="anonymous">
 
 <!-- Contenido de la página web -->
 # Mi Página Web Increíble
