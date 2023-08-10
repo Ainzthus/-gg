@@ -12,9 +12,9 @@
 
 ¿Quieres ponerse en contacto? ¡Sígueme en mis redes sociales!
 
-- [Twitter](https://twitter.com/mi_usuario)
-- [Instagram](https://instagram.com/mi_usuario)
-- [LinkedIn](https://linkedin.com/in/mi_usuario)
+- [Twitter](https://twitter.com/mi_usuario) <i class="fab fa-twitter"></i>
+- [Instagram](https://instagram.com/mi_usuario) <i class="fab fa-instagram"></i>
+- [LinkedIn](https://linkedin.com/in/mi_usuario) <i class="fab fa-linkedin"></i>
 
 ## Acerca de
 
