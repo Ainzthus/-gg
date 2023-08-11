@@ -17,7 +17,7 @@
 
   <h2>Uso</h2>
   <ol>
-    <li>Visita <a href="https://mi-pagina-web.com">https://mi-pagina-web.com</a>.</li>
+    <li>Visita <a href="https://ainzthus.github.io/-gg/">https://mi-pagina-web.com</a>.</li>
     <li>Navega por las diferentes secciones para conocer más sobre mí y mis proyectos.</li>
     <li>¡Disfruta del contenido y siéntete libre de contactarme si tienes alguna pregunta!</li>
   </ol>
