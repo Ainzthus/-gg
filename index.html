@@ -1,51 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Página de ejemplo</title>
+  <title>Ainzthus.GG</title>
   <style>
     body {
-      background-color: black;
+      margin: 0;
+      overflow: hidden; /* Evita el desplazamiento vertical */
+      background-color: black; /* Fondo oscuro */
+    }
+
+    #stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Permite que el mouse pase a través de las estrellas */
+    }
+
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      pointer-events: none;
+      animation: moveStars linear infinite;
+    }
+
+    @keyframes moveStars {
+      to {
+        transform: translateY(calc(100vh + 10px));
+      }
+    }
+
+    .buttons-container {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      justify-content: center; /* Centra los botones horizontalmente */
+    }
+
+    .button {
+      font-size: 1.2em;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 2px solid #007bff;
+      color: #007bff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
       color: white;
       font-family: Arial, sans-serif;
-      text-align: center;
     }
-    
-    #welcome {
-      margin-top: 200px;
-      font-size: 32px;
+
+    .text-title {
+      font-size: 6em;
+      font-weight: bold;
+      margin-bottom: 20px;
     }
-    
-    #buttons {
-      margin-top: 50px;
+
+    .text-description {
+      font-size: 1.2em;
+      color: rgba(255, 255, 255, 0.8);
     }
-    
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px;
-      background-color: white;
-      color: black;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-    
-    .button:hover {
-      background-color: gray;
-      color: white;
+
+    .text-content {
+      font-size: 1.2em;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 30px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      top: -25px; /* Ajusta esta cantidad para mover verticalmente el texto */
     }
   </style>
 </head>
 <body>
-  <div id="welcome">
-    <h1>Ainzthus</h1>
-    <p>Informacion y proyectos futuros.</p>
+  <div id="stars"></div>
+  <div class="text-container">
+    <h1 class="text-title">Ainzthus</h1>
+    <p class="text-content">El contenido y el proyecto estarán enfocados en mis redes, abarcando también videojuegos, creación de contenido, y la entrega de consejos y trucos.</p>
   </div>
-  
-  <div id="buttons">
-    <a class="button" href="#">Más información</a>
-    <a class="button" href="#">Redes sociales</a>
-    <a class="button" href="coach.html">Coach de League of Legends</a>
+  <div class="buttons-container">
+    <button class="button">Información</button>
+    <button class="button">Redes Sociales</button>
+    <button class="button">Coaching LoL</button>
   </div>
+  <script>
+    const numStars = 100; // Número de estrellas
+
+    for (let i = 0; i < numStars; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.width = `${Math.random() * 3}px`;
+      star.style.height = star.style.width;
+      star.style.background = `rgba(255, 255, 255, ${Math.random()})`;
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.animationDuration = `${Math.random() * 3 + 1}s`; // Duración de la animación entre 1 y 4 segundos
+      document.getElementById('stars').appendChild(star);
+    }
+
+    // Manejar movimiento del mouse
+    document.addEventListener('mousemove', (event) => {
+      const mouseX = event.clientX;
+      const mouseY = event.clientY;
+
+      const stars = document.querySelectorAll('.star');
+      stars.forEach((star) => {
+        const starX = parseFloat(star.style.left);
+        const starY = parseFloat(star.style.top);
+        const offsetX = (starX - mouseX) * 0.005; // Ajusta la velocidad del movimiento horizontal
+        const offsetY = (starY - mouseY) * 0.005; // Ajusta la velocidad del movimiento vertical
+        star.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+      });
+    });
+  </script>
 </body>
 </html>
